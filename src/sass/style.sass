@@ -1,0 +1,294 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+
++reset()
+
+body
+  font-family: Montserrat, sans-serif
+  padding: 0
+  margin: 0
+  color: #ffffff
+  background: #262626
+  letter-spacing: .09em
+
+a, a:hover, a:active
+  text-decoration: none
+  transition: all .5s ease
+  color: #fff
+
+ul, li
+  display: block
+  padding: 0
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+.container
+  width: 87%
+  margin: 0 auto
+  position: relative
+  display: flex
+  align-items: center
+  height: 100%
+  z-index: 2
+
+.offer,
+.slider
+  width: 50%
+  position: relative
+  +md(width, 100%)
+
+.btn
+  background: #e930a1
+  color: #FFFFFF
+  font-weight: 900
+  text-transform: uppercase
+  text-align: center
+  font-size: 12px
+  width: 185px
+  padding: 22px 0
+  border-radius: 100px
+  display: block
+
+  &:hover
+    background: #ff009c
+    box-shadow: 0 10px 10px rgba(233,48,161,0.5)
+
+.btn-round
+  font-size: 9px
+  border: 1px solid #30e9a1
+  color: #30e9a1
+  padding: 5px 16px
+  text-transform: uppercase
+  border-radius: 100px
+
+  &:hover
+    background: #30e9a1
+    border: 1px solid #30e9a1
+    color: #000
+
+.logo
+
+.menu
+  display: flex
+  margin-left: 235px
+
+  &__item
+    margin-right: 48px
+    font-size: 13px
+
+    a
+      font-weight: 300
+
+      &:hover
+        color: #23c8d2
+
+.auth
+  display: flex
+  align-items: center
+  margin-left: auto
+
+  &__info
+    margin-left: 15px
+
+  &__profile
+    font-size: 8px
+    color: #b2b2b2
+    margin-bottom: 3px
+
+  &__name
+    font-size: 10px
+    margin: 0
+
+  &__img
+    border: 1px solid #404040
+    border-radius: 50%
+    width: 57px
+    height: 57px
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__play
+    display: block
+    background: #353535
+    width: 27px
+    height: 27px
+    border-radius: 50%
+    text-align: center
+    line-height: 27px
+    margin-left: 20px
+
+  &__more
+    background: transparent url("../img/arrow.png") no-repeat
+    width: 5px
+    height: 6px
+    border: none
+    display: block
+    margin-left: 14px
+
+header
+  height: 15vh
+
+.content
+  height: 80vh
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    background: url("../img/light1.png")
+    width: 1009px
+    height: 979px
+    position: absolute
+    top: -1vh
+    right: 0
+
+  &:after
+    content: ''
+    display: block
+    background: url("../img/llight2.png")
+    width: 1009px
+    height: 979px
+    position: absolute
+    top: -14vh
+    right: 0
+    z-index: 1
+
+.offer
+  background: #1c1c1c
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+
+  &__body
+    width: 610px
+    text-transform: uppercase
+
+  &__title
+    font-size: 58px
+    font-weight: 900
+
+  &__word
+    display: block
+    font-size: 81px
+    position: relative
+
+    &:before
+      content: 'anywhere'
+      display: block
+      font-size: 81px
+      color: #8d1212
+      position: absolute
+      z-index: 1
+      margin-left: -6px
+      margin-top: -4px
+
+    &:after
+      content: 'anywhere'
+      display: block
+      font-size: 81px
+      color: #37aaa8
+      position: absolute
+      top: 3px
+      left: 3px
+      z-index: 1
+
+  &__word span
+    z-index: 2
+    position: relative
+
+  &__btns
+    display: flex
+    margin-top: 3vh
+
+  &__btn
+    margin-right: 20px
+
+  &__cta
+    margin-top: 4vh
+
+.slider
+  height: 100%
+  background: rgba(0,0,0,0.07)
+  position: relative
+
+.ellipse
+  background: url("../img/elipse.png") no-repeat center
+  background-size: contain
+  width: 100%
+  height: 100%
+  position: absolute
+  bottom: -12%
+  right: 0
+
+.lines-dot
+  background: url("../img/lines-dot.png") no-repeat center
+  background-size: contain
+  width: 20%
+  height: 20%
+  position: absolute
+  bottom: 10%
+  left: -14%
+
+.plus-yellow
+  background: url("../img/plus-yellow.png") no-repeat center
+  background-size: contain
+  width: 6%
+  height: 6%
+  position: absolute
+  top: 41%
+  left: 24%
+  max-width: 67px
+  max-height: 67px
+
+.rnb-man
+  background: url("../img/mb-man.png") no-repeat center
+  background-size: contain
+  width: 80%
+  height: 80%
+  position: absolute
+  left: 9%
+  bottom: 0
+  max-width: 703px
+  max-height: 702px
+
+.plus-dots
+  background: url("../img/plus_dots.png") no-repeat center
+  background-size: contain
+  width: 40%
+  height: 40%
+  position: absolute
+  right: 0
+  bottom: 0
+  max-width: 290px
+  max-height: 290px
+
+.triangles
+  background: url("../img/triangle.png") no-repeat center
+  background-size: contain
+  width: 30%
+  height: 30%
+  position: absolute
+  top: 20%
+  right: 20%
+  max-width: 165px
+  max-height: 165px
+
+.line-wave
+  background: url("../img/line-wave.png") no-repeat center
+  background-size: contain
+  width: 30%
+  height: 30%
+  position: absolute
+  left: -13%
+  top: 20%
+  max-width: 260px
+  max-height: 233px
+
+
+
